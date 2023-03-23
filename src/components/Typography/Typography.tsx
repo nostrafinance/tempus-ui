@@ -74,13 +74,18 @@ const DEFAULT_TYPES: TypographyTypeMap = {
   mono: 'monospace',
 };
 
-export interface TypographyProps<V extends string, C extends string, W extends string, T extends string> {
+export interface TypographyBaseProps<V extends string, C extends string, W extends string, T extends string>
+  extends PropsWithChildren<{}> {
   variant: V;
   color?: C;
   opacity?: number;
   weight?: W;
   type?: T;
   className?: string;
+}
+
+export interface TypographyProps<V extends string, C extends string, W extends string, T extends string>
+  extends TypographyBaseProps<V, C, W, T> {
   variantMap?: TypographyVariantMap;
   colorMap?: TypographyColorMap;
   weightMap?: TypographyWeightMap;
@@ -96,7 +101,7 @@ const Typography = <
   W extends string = TypographyWeight,
   T extends string = TypographyType,
 >(
-  props: PropsWithChildren<TypographyProps<V, C, W, T>>,
+  props: TypographyProps<V, C, W, T>,
 ) => {
   const {
     variant,
