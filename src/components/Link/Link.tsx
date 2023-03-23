@@ -2,7 +2,7 @@ import { FC, forwardRef, memo, HTMLProps, useMemo, PropsWithChildren } from 'rea
 
 import './Link.scss';
 
-interface LinkProps {
+export interface LinkProps {
   className?: string;
   title?: string;
   href?: string;

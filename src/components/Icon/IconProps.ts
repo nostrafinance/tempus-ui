@@ -1,4 +1,4 @@
-export default interface IconProps {
+export interface IconProps {
   size?: 'xxlarge' | 'xlarge' | 'large' | 'medium' | 'small' | 'tiny' | number;
   color?: string;
 }

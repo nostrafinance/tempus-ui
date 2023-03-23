@@ -1,5 +1,5 @@
 import React, { FC, memo } from 'react';
-import IconProps, { InnerIconProps } from './IconProps';
+import { IconProps, InnerIconProps } from './IconProps';
 import {
   ICON_COLOR_DEFAULT,
   ICON_SIZE_DEFAULT,
