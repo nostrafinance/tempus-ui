@@ -1,4 +1,4 @@
-import { CSSProperties, FC, memo, PropsWithChildren } from 'react';
+import { CSSProperties, PropsWithChildren } from 'react';
 
 export type TypographyVariant =
   | 'header'
@@ -8,104 +8,123 @@ export type TypographyVariant =
   | 'body-primary'
   | 'body-secondary'
   | 'body-tertiary';
-
 export type TypographyColor = 'text-primary' | 'text-secondary' | 'text-tertiary' | 'text-primary-inverted' | 'primary';
-
 export type TypographyWeight = 'regular' | 'medium' | 'bold';
-
 export type TypographyType = 'regular' | 'mono';
 
-const typographyVariantMap = new Map<TypographyVariant, CSSProperties>();
-typographyVariantMap.set('header', {
-  fontStyle: 'normal',
-  fontSize: '40px',
-  lineHeight: '48px',
-});
-typographyVariantMap.set('subheader', {
-  fontStyle: 'normal',
-  fontSize: '32px',
-  lineHeight: '40px',
-});
-typographyVariantMap.set('title', {
-  fontStyle: 'normal',
-  fontSize: '24px',
-  lineHeight: '32px',
-});
-typographyVariantMap.set('subtitle', {
-  fontStyle: 'normal',
-  fontSize: '20px',
-  lineHeight: '28px',
-});
-typographyVariantMap.set('body-primary', {
-  fontStyle: 'normal',
-  fontSize: '16px',
-  lineHeight: '24px',
-});
-typographyVariantMap.set('body-secondary', {
-  fontStyle: 'normal',
-  fontSize: '14px',
-  lineHeight: '16px',
-});
-typographyVariantMap.set('body-tertiary', {
-  fontStyle: 'normal',
-  fontSize: '10px',
-  lineHeight: '16px',
-});
+export type TypographyVariantMap = { [k in string]: CSSProperties };
+export type TypographyColorMap = { [k in string]: string };
+export type TypographyWeightMap = { [k in string]: number };
+export type TypographyTypeMap = { [k in string]: string };
 
-const typographyColorMap = new Map<TypographyColor, string>();
-typographyColorMap.set('text-primary', 'var(--textPrimary)');
-typographyColorMap.set('text-secondary', 'var(--textSecondary)');
-typographyColorMap.set('text-tertiary', 'var(--textTertiary)');
-typographyColorMap.set('text-primary-inverted', 'var(--textPrimaryInverted)');
-typographyColorMap.set('primary', 'var(--primary)');
+const DEFAULT_VARIANTS: TypographyVariantMap = {
+  header: {
+    fontStyle: 'normal',
+    fontSize: '40px',
+    lineHeight: '48px',
+  },
+  subheader: {
+    fontStyle: 'normal',
+    fontSize: '32px',
+    lineHeight: '40px',
+  },
+  title: {
+    fontStyle: 'normal',
+    fontSize: '24px',
+    lineHeight: '32px',
+  },
+  subtitle: {
+    fontStyle: 'normal',
+    fontSize: '20px',
+    lineHeight: '28px',
+  },
+  'body-primary': {
+    fontStyle: 'normal',
+    fontSize: '16px',
+    lineHeight: '24px',
+  },
+  'body-secondary': {
+    fontStyle: 'normal',
+    fontSize: '14px',
+    lineHeight: '16px',
+  },
+  'body-tertiary': {
+    fontStyle: 'normal',
+    fontSize: '10px',
+    lineHeight: '16px',
+  },
+};
 
-const typographyWeightMap = new Map<TypographyWeight, number>();
-typographyWeightMap.set('regular', 400);
-typographyWeightMap.set('medium', 500);
-typographyWeightMap.set('bold', 700);
+const DEFAULT_COLORS: TypographyColorMap = {
+  'text-primary': 'var(--textPrimary)',
+  'text-secondary': 'var(--textSecondary)',
+  'text-tertiary': 'var(--textTertiary)',
+  'text-primary-inverted': 'var(--textPrimaryInverted)',
+  primary: 'var(--primary)',
+};
 
-const typographyTypeMap = new Map<TypographyType, string>();
-typographyTypeMap.set('regular', 'sans-serif');
-typographyTypeMap.set('mono', 'monospace');
+const DEFAULT_WEIGHTS: TypographyWeightMap = {
+  regular: 400,
+  medium: 500,
+  bold: 700,
+};
 
-export interface TypographyProps {
-  variant: TypographyVariant;
-  color?: TypographyColor;
+const DEFAULT_TYPES: TypographyTypeMap = {
+  regular: 'sans-serif',
+  mono: 'monospace',
+};
+
+export interface TypographyProps<V extends string, C extends string, W extends string, T extends string> {
+  variant: V;
+  color?: C;
   opacity?: number;
-  weight?: TypographyWeight;
-  type?: TypographyType;
+  weight?: W;
+  type?: T;
   className?: string;
+  variantMap?: TypographyVariantMap;
+  colorMap?: TypographyColorMap;
+  weightMap?: TypographyWeightMap;
+  typeMap?: TypographyTypeMap;
+  defaultColor?: C;
+  defaultWeight?: W;
+  defaultType?: T;
 }
 
-const Typography: FC<PropsWithChildren<TypographyProps>> = props => {
-  const { variant, color, weight, opacity = 1, type, children, className } = props;
+const Typography = <
+  V extends string = TypographyVariant,
+  C extends string = TypographyColor,
+  W extends string = TypographyWeight,
+  T extends string = TypographyType,
+>(
+  props: PropsWithChildren<TypographyProps<V, C, W, T>>,
+) => {
+  const {
+    variant,
+    color,
+    weight,
+    opacity = 1,
+    type,
+    children,
+    className,
+    variantMap = DEFAULT_VARIANTS,
+    colorMap = DEFAULT_COLORS,
+    weightMap = DEFAULT_WEIGHTS,
+    typeMap = DEFAULT_TYPES,
+    defaultColor = 'text-primary',
+    defaultWeight = 'regular',
+    defaultType = 'regular',
+  } = props;
 
-  let fontColor: string | undefined;
-  if (color) {
-    fontColor = typographyColorMap.get(color);
-  } else {
-    fontColor = typographyColorMap.get('text-primary');
-  }
-
-  let fontWeight: number | undefined;
-  if (weight) {
-    fontWeight = typographyWeightMap.get(weight);
-  } else {
-    fontWeight = typographyWeightMap.get('regular');
-  }
-
-  let fontFamily: string | undefined;
-  if (type) {
-    fontFamily = typographyTypeMap.get(type);
-  } else {
-    fontFamily = typographyTypeMap.get('regular');
-  }
+  const fontVariant = variantMap[variant];
+  const fontColor = colorMap[color ?? defaultColor];
+  const fontWeight = weightMap[weight ?? defaultWeight];
+  const fontFamily = typeMap[type ?? defaultType];
 
   return (
     <div
       className={className}
       style={{
-        ...typographyVariantMap.get(variant),
+        ...fontVariant,
         color: fontColor,
         fontWeight,
         fontFamily,
@@ -117,4 +136,4 @@ const Typography: FC<PropsWithChildren<TypographyProps>> = props => {
   );
 };
 
-export default memo(Typography);
+export default Typography;
