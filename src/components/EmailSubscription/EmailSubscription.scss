@@ -1,0 +1,78 @@
+.common-ui__email-subscription {
+  --emailSubscriptionWidth: 600px;
+  --emailSubscriptionHeight: 56px;
+  --emailSubscriptionBorderWidth: 1px;
+  --emailSubscriptionBorderColor: grey;
+  --emailSubscriptionBorderFocusColor: black;
+  --emailSubscriptionBorderErrorColor: red;
+  --emailSubscriptionBorderRadius: 12px;
+  --emailSubscriptionBackgroundColor: white;
+  --emailSubscriptionPadding: 10px 36px;
+  --emailSubscriptionInputColor: #222222;
+  --emailSubscriptionInputFontStyle: normal;
+  --emailSubscriptionInputFontSize: 20px;
+  --emailSubscriptionInputLineHeight: 24px;
+  --emailSubscriptionInputFontWeight: 500;
+  --emailSubscriptionInputFontFamily: sans-serif;
+  --emailSubscriptionButtonColor: grey;
+  --emailSubscriptionButtonWidth: 180px;
+
+  border-radius: var(--emailSubscriptionBorderRadius);
+  box-sizing: border-box;
+  position: relative;
+  width: var(--emailSubscriptionWidth);
+
+  .common-ui__email-subscription__email {
+    height: var(--emailSubscriptionHeight);
+    background-color: var(--emailSubscriptionBackgroundColor);
+    border: var(--emailSubscriptionBorderWidth) solid var(--emailSubscriptionBorderColor);
+    border-radius: var(--emailSubscriptionBorderRadius);
+    display: flex;
+    align-items: center;
+
+    label {
+      padding: var(--emailSubscriptionPadding);
+      width: 100%;
+      display: block;
+      box-sizing: border-box;
+
+      input {
+        border: none;
+        outline: none;
+        display: block;
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+        color: var(--emailSubscriptionInputColor);
+        font-style: var(--emailSubscriptionInputFontStyle);
+        font-weight: var(--emailSubscriptionInputFontWeight);
+        line-height: var(--emailSubscriptionInputLineHeight);
+        font-size: var(--emailSubscriptionInputFontSize);
+        font-family: var(--emailSubscriptionInputFontFamily);
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &.common-ui__email-subscription__email__focus {
+      border-color: var(--emailSubscriptionBorderFocusColor);
+    }
+
+    &.common-ui__email-subscription__email__error {
+      border-color: var(--emailSubscriptionBorderErrorColor);
+    }
+  }
+
+  .common-ui__email-subscription__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    button {
+      width: var(--emailSubscriptionButtonWidth);
+      height: calc(var(--emailSubscriptionHeight) + 2 * var(--emailSubscriptionBorderWidth));
+      background: var(--emailSubscriptionButtonColor);
+      border-radius: var(--emailSubscriptionBorderRadius);
+    }
+  }
+}

@@ -34,7 +34,7 @@ const ButtonWrapper = forwardRef<HTMLButtonElement, ButtonWrapperProps>((props, 
   return (
     <button
       ref={ref}
-      className={`tempus-ui__btn ${className}`}
+      className={`common-ui__btn ${className}`}
       title={title}
       disabled={disabled}
       value={value}

@@ -4,7 +4,7 @@ import withIcon from './withIcon';
 
 const Twitter: FC<InnerIconProps> = ({ size, color }) => (
   <svg
-    className="tempus-ui__twitter-icon"
+    className="common-ui__twitter-icon"
     width={size}
     height={size}
     viewBox="0 0 47 47"
