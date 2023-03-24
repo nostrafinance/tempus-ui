@@ -1,4 +1,4 @@
-.tempus-ui__email-subscription {
+.common-ui__email-subscription {
   --emailSubscriptionWidth: 600px;
   --emailSubscriptionHeight: 56px;
   --emailSubscriptionBorderWidth: 1px;
@@ -22,7 +22,7 @@
   position: relative;
   width: var(--emailSubscriptionWidth);
 
-  .tempus-ui__email-subscription__email {
+  .common-ui__email-subscription__email {
     height: var(--emailSubscriptionHeight);
     background-color: var(--emailSubscriptionBackgroundColor);
     border: var(--emailSubscriptionBorderWidth) solid var(--emailSubscriptionBorderColor);
@@ -54,16 +54,16 @@
       }
     }
 
-    &.tempus-ui__email-subscription__email__focus {
+    &.common-ui__email-subscription__email__focus {
       border-color: var(--emailSubscriptionBorderFocusColor);
     }
 
-    &.tempus-ui__email-subscription__email__error {
+    &.common-ui__email-subscription__email__error {
       border-color: var(--emailSubscriptionBorderErrorColor);
     }
   }
 
-  .tempus-ui__email-subscription__button {
+  .common-ui__email-subscription__button {
     position: absolute;
     top: 0;
     right: 0;

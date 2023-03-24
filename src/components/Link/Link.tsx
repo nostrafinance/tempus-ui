@@ -22,7 +22,7 @@ const Link = forwardRef<HTMLAnchorElement, PropsWithChildren<LinkProps>>((props,
           ref={ref}
           rel="external noreferrer nofollow"
           target="_blank"
-          className={`tempus-ui__link ${className} ${disabled ? 'disabled' : ''}`}
+          className={`common-ui__link ${className} ${disabled ? 'disabled' : ''}`}
           title={title}
           href={href}
           onClick={onClick}
@@ -34,7 +34,7 @@ const Link = forwardRef<HTMLAnchorElement, PropsWithChildren<LinkProps>>((props,
         // eslint-disable-next-line jsx-a11y/anchor-is-valid
         <a
           ref={ref}
-          className={`tempus-ui__link ${className} `}
+          className={`common-ui__link ${className} `}
           title={title}
           href={disabled ? '#' : href}
           onClick={onClick}

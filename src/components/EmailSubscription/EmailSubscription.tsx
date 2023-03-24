@@ -97,12 +97,12 @@ const EmailSubscription: FC<EmailSubscriptionProps> = props => {
   const handleBlur = useCallback(() => setIsFocus(false), []);
 
   return (
-    <div className={`tempus-ui__email-subscription ${className}`}>
+    <div className={`common-ui__email-subscription ${className}`}>
       {title}
       <div
-        className={`tempus-ui__email-subscription__email ${
-          isFocus ? 'tempus-ui__email-subscription__email__focus' : ''
-        } ${errorMsg ? 'tempus-ui__email-subscription__email__error' : ''}`}
+        className={`common-ui__email-subscription__email ${
+          isFocus ? 'common-ui__email-subscription__email__focus' : ''
+        } ${errorMsg ? 'common-ui__email-subscription__email__error' : ''}`}
       >
         <label htmlFor="MERGE0">
           <input
@@ -121,7 +121,7 @@ const EmailSubscription: FC<EmailSubscriptionProps> = props => {
           />
         </label>
       </div>
-      <div className="tempus-ui__email-subscription__button">
+      <div className="common-ui__email-subscription__button">
         <ButtonWrapper onClick={handleClick} disabled={buttonDisabled || disabled}>
           {button}
         </ButtonWrapper>
