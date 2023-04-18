@@ -24,10 +24,10 @@ const MenuButton: FC<MenuButtonProps> = (props): JSX.Element => {
 
   return (
     <div
-      className={`common-ui__menuButton__wrapper ${checked ? 'common-ui__menuButton__checked' : ''}`}
+      className={`common-ui__menu-button__wrapper ${checked ? 'common-ui__menu-button__checked' : ''}`}
       onClick={onWrapperClick}
     >
-      <div className="common-ui__menuButton">
+      <div className="common-ui__menu-button">
         <input
           type="checkbox"
           id="common-ui-header-menu-button"
@@ -38,7 +38,7 @@ const MenuButton: FC<MenuButtonProps> = (props): JSX.Element => {
         />
         <label
           htmlFor="common-ui-header-menu-button"
-          className="common-ui__menuButton__label common-ui__menuButton__light"
+          className="common-ui__menu-button__label common-ui__menu-button__light"
         />
       </div>
     </div>

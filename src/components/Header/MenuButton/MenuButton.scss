@@ -1,4 +1,4 @@
-.common-ui__menuButton__wrapper {
+.common-ui__menu-button__wrapper {
   position: relative;
   cursor: pointer;
   width: 24px;
@@ -6,7 +6,7 @@
   -webkit-tap-highlight-color: transparent;
 
   @media screen and (max-width: 1024px) {
-    &.common-ui__menuButton__checked {
+    &.common-ui__menu-button__checked {
       top: 38px;
       right: 32px;
       position: fixed;
@@ -14,7 +14,7 @@
   }
 
   @media screen and (max-width: 768px) {
-    &.common-ui__menuButton__checked {
+    &.common-ui__menu-button__checked {
       top: 22px;
       right: 32px;
       position: fixed;
@@ -22,28 +22,28 @@
   }
 
   &:hover {
-    .nw__menuButton-light,
-    .nw__menuButton-light::before,
-    .nw__menuButton-light::after {
+    .nw__menu-button-light,
+    .nw__menu-button-light::before,
+    .nw__menu-button-light::after {
       background-color: var(--headerMenuButtonColor);
     }
   }
 
   &:hover {
-    .nw__menuButton-dark,
-    .nw__menuButton-dark::before,
-    .nw__menuButton-dark::after {
+    .nw__menu-button-dark,
+    .nw__menu-button-dark::before,
+    .nw__menu-button-dark::after {
       background-color: var(--headerMenuButtonColor);
     }
   }
 }
 
-.common-ui__menuButton {
+.common-ui__menu-button {
   position: absolute;
   top: 8px;
 }
 
-.common-ui__menuButton__light {
+.common-ui__menu-button__light {
   background-color: var(--headerMenuButtonColor);
 
   &::before,
@@ -52,7 +52,7 @@
   }
 }
 
-.common-ui__menuButton__label {
+.common-ui__menu-button__label {
   border-radius: 2px;
   width: 24px;
   height: 3px;
