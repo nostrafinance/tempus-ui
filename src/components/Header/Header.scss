@@ -118,10 +118,6 @@
         background-color: var(--headerMenuItemSeparatorColor);
         opacity: var(--headerMenuItemSeparatorOpacity);
         margin: var(--headerMenuItemSeparatorMargin);
-
-        &:last-child {
-          display: none;
-        }
       }
     }
   }
