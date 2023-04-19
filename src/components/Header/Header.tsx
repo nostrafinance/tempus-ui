@@ -27,6 +27,16 @@ const Header: FC<HeaderProps> = props => {
 
   const onMenuToggle = useCallback((opened: boolean) => setMenuOpened(opened), []);
 
+  const menuItemsWithSeparator: ReactNode[] = [];
+  menuItems.forEach((item, i) => {
+    if (i > 0) {
+      menuItemsWithSeparator.push(
+        <div key={`menu-item-separator-${i}`} className="common-ui__header__menu-item-separator" />,
+      );
+    }
+    menuItemsWithSeparator.push(item);
+  });
+
   return (
     <div className="common-ui__header">
       <Link className="common-ui__header__logo" href={logoHref}>
@@ -46,14 +56,7 @@ const Header: FC<HeaderProps> = props => {
               </Link>
             </div>
           </div>
-          <div className="common-ui__header__menu-body">
-            {menuItems.map((item, i) => (
-              <>
-                {item}
-                <div key={`separator-${i}`} className="common-ui__header__menu-item-separator" />
-              </>
-            ))}
-          </div>
+          <div className="common-ui__header__menu-body">{menuItemsWithSeparator}</div>
         </div>
 
         <MenuButton onChange={onMenuToggle} checked={menuOpened} />
