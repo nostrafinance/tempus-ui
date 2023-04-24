@@ -18,7 +18,7 @@ export default [
       },
     ],
     plugins: [
-      sass({ insert: true }),
+      sass({ output: true }),
       json(),
       typescript({
         tsconfig: './tsconfig.json',
