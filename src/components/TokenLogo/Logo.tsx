@@ -26,6 +26,7 @@ import TokenBTC from './TokenBTC';
 import TokenTEMP from './TokenTEMP';
 import TokenBUSD from './TokenBUSD';
 import TokenSHIB from './TokenSHIB';
+import TokenRETH from './TokenRETH';
 
 export type LogoType =
   | 'token-ETH'
@@ -53,7 +54,8 @@ export type LogoType =
   | 'token-WBTC'
   | 'token-TEMP'
   | 'token-BUSD'
-  | 'token-SHIB';
+  | 'token-SHIB'
+  | 'token-rETH';
 export type LogoMap = { [k in string]: FC<LogoProps> };
 
 const DEFAULT_LogoS: LogoMap = {
@@ -83,6 +85,7 @@ const DEFAULT_LogoS: LogoMap = {
   'token-TEMP': TokenTEMP,
   'token-BUSD': TokenBUSD,
   'token-SHIB': TokenSHIB,
+  'token-rETH': TokenRETH,
 };
 
 export interface LogoGenericProps<T extends string> extends LogoProps {
