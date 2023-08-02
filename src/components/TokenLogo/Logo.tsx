@@ -27,6 +27,7 @@ import TokenTEMP from './TokenTEMP';
 import TokenBUSD from './TokenBUSD';
 import TokenSHIB from './TokenSHIB';
 import TokenRETH from './TokenRETH';
+import TokenSDAI from './TokenSDAI';
 
 export type LogoType =
   | 'token-ETH'
@@ -34,6 +35,7 @@ export type LogoType =
   | 'token-USDC'
   | 'token-USDT'
   | 'token-DAI'
+  | 'token-sDAI'
   | 'token-R'
   | 'token-FTM'
   | 'token-MIM'
@@ -64,6 +66,7 @@ const DEFAULT_LogoS: LogoMap = {
   'token-USDC': TokenUSDC,
   'token-USDT': TokenUSDT,
   'token-DAI': TokenDAI,
+  'token-sDAI': TokenSDAI,
   'token-R': TokenR,
   'token-FTM': TokenFTM,
   'token-MIM': TokenMIM,
