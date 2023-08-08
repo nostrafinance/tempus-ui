@@ -28,6 +28,9 @@ import TokenBUSD from './TokenBUSD';
 import TokenSHIB from './TokenSHIB';
 import TokenRETH from './TokenRETH';
 import TokenSDAI from './TokenSDAI';
+import TokenRAFT from './TokenRAFT';
+import TokenVeRAFT from './TokenVeRAFT';
+import TokenB80RAFT20ETH from './TokenB80RAFT20ETH';
 
 export type LogoType =
   | 'token-ETH'
@@ -57,7 +60,10 @@ export type LogoType =
   | 'token-TEMP'
   | 'token-BUSD'
   | 'token-SHIB'
-  | 'token-rETH';
+  | 'token-rETH'
+  | 'token-RAFT'
+  | 'token-veRAFT'
+  | 'token-B-80RAFT-20ETH';
 export type LogoMap = { [k in string]: FC<LogoProps> };
 
 const DEFAULT_LogoS: LogoMap = {
@@ -89,6 +95,9 @@ const DEFAULT_LogoS: LogoMap = {
   'token-BUSD': TokenBUSD,
   'token-SHIB': TokenSHIB,
   'token-rETH': TokenRETH,
+  'token-RAFT': TokenRAFT,
+  'token-veRAFT': TokenVeRAFT,
+  'token-B-80RAFT-20ETH': TokenB80RAFT20ETH,
 };
 
 export interface LogoGenericProps<T extends string> extends LogoProps {
