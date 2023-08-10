@@ -32,8 +32,8 @@ const TokenB80RAFT20ETH: FC<InnerLogoProps> = ({ size }) => (
       fill="url(#paint3_linear_2800_573)"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M12 21.9375C17.4883 21.9375 21.9375 17.4883 21.9375 12C21.9375 6.51167 17.4883 2.0625 12 2.0625C6.51167 2.0625 2.0625 6.51167 2.0625 12C2.0625 17.4883 6.51167 21.9375 12 21.9375ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
       fill="#DDE4FF"
     />
@@ -50,8 +50,8 @@ const TokenB80RAFT20ETH: FC<InnerLogoProps> = ({ size }) => (
         y2="17.6314"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF661E" />
-        <stop offset="1" stop-color="#FF9308" />
+        <stop stopColor="#FF661E" />
+        <stop offset="1" stopColor="#FF9308" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_2800_573"
@@ -61,8 +61,8 @@ const TokenB80RAFT20ETH: FC<InnerLogoProps> = ({ size }) => (
         y2="17.6314"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF661E" />
-        <stop offset="1" stop-color="#FF9308" />
+        <stop stopColor="#FF661E" />
+        <stop offset="1" stopColor="#FF9308" />
       </linearGradient>
       <linearGradient
         id="paint2_linear_2800_573"
@@ -72,8 +72,8 @@ const TokenB80RAFT20ETH: FC<InnerLogoProps> = ({ size }) => (
         y2="17.6314"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF661E" />
-        <stop offset="1" stop-color="#FF9308" />
+        <stop stopColor="#FF661E" />
+        <stop offset="1" stopColor="#FF9308" />
       </linearGradient>
       <linearGradient
         id="paint3_linear_2800_573"
@@ -83,8 +83,8 @@ const TokenB80RAFT20ETH: FC<InnerLogoProps> = ({ size }) => (
         y2="17.6314"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF661E" />
-        <stop offset="1" stop-color="#FF9308" />
+        <stop stopColor="#FF661E" />
+        <stop offset="1" stopColor="#FF9308" />
       </linearGradient>
     </defs>
   </svg>
