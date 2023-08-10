@@ -40,8 +40,8 @@ const TokenRAFT: FC<InnerLogoProps> = ({ size }) => (
         y2="18.8372"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF661E" />
-        <stop offset="1" stop-color="#FF9308" />
+        <stop stopColor="#FF661E" />
+        <stop offset="1" stopColor="#FF9308" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_2545_28732"
@@ -51,8 +51,8 @@ const TokenRAFT: FC<InnerLogoProps> = ({ size }) => (
         y2="18.7246"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF661E" />
-        <stop offset="1" stop-color="#FF9308" />
+        <stop stopColor="#FF661E" />
+        <stop offset="1" stopColor="#FF9308" />
       </linearGradient>
       <linearGradient
         id="paint2_linear_2545_28732"
@@ -62,8 +62,8 @@ const TokenRAFT: FC<InnerLogoProps> = ({ size }) => (
         y2="18.0677"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF661E" />
-        <stop offset="1" stop-color="#FF9308" />
+        <stop stopColor="#FF661E" />
+        <stop offset="1" stopColor="#FF9308" />
       </linearGradient>
       <linearGradient
         id="paint3_linear_2545_28732"
@@ -73,8 +73,8 @@ const TokenRAFT: FC<InnerLogoProps> = ({ size }) => (
         y2="18.18"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF661E" />
-        <stop offset="1" stop-color="#FF9308" />
+        <stop stopColor="#FF661E" />
+        <stop offset="1" stopColor="#FF9308" />
       </linearGradient>
     </defs>
   </svg>

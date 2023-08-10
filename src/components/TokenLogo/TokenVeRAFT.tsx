@@ -33,8 +33,8 @@ const TokenVeRAFT: FC<InnerLogoProps> = ({ size }) => (
     />
     <defs>
       <linearGradient id="paint0_linear_2490_67508" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#FF661E" />
-        <stop offset="1" stop-color="#FF9308" />
+        <stop stopColor="#FF661E" />
+        <stop offset="1" stopColor="#FF9308" />
       </linearGradient>
     </defs>
   </svg>
