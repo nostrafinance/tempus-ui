@@ -63,7 +63,8 @@ export type LogoType =
   | 'token-rETH'
   | 'token-RAFT'
   | 'token-veRAFT'
-  | 'token-B-80RAFT-20ETH';
+  | 'token-B-80RAFT-20ETH'
+  | 'token-B-80RAFT-20WETH';
 export type LogoMap = { [k in string]: FC<LogoProps> };
 
 const DEFAULT_LogoS: LogoMap = {
@@ -98,6 +99,7 @@ const DEFAULT_LogoS: LogoMap = {
   'token-RAFT': TokenRAFT,
   'token-veRAFT': TokenVeRAFT,
   'token-B-80RAFT-20ETH': TokenB80RAFT20ETH,
+  'token-B-80RAFT-20WETH': TokenB80RAFT20ETH,
 };
 
 export interface LogoGenericProps<T extends string> extends LogoProps {
