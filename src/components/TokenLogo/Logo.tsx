@@ -31,6 +31,12 @@ import TokenSDAI from './TokenSDAI';
 import TokenRAFT from './TokenRAFT';
 import TokenVeRAFT from './TokenVeRAFT';
 import TokenB80RAFT20ETH from './TokenB80RAFT20ETH';
+import NetworkEthereum from './NetworkEthereum';
+import NetworkArbitrum from './NetworkArbitrum';
+import NetworkOptimism from './NetworkOptimism';
+import NetworkPolygon from './NetworkPolygon';
+import NetworkBase from './NetworkBase';
+import NetworkZkSync from './NetworkZkSync';
 
 export type LogoType =
   | 'token-ETH'
@@ -64,7 +70,13 @@ export type LogoType =
   | 'token-RAFT'
   | 'token-veRAFT'
   | 'token-B-80RAFT-20ETH'
-  | 'token-B-80RAFT-20WETH';
+  | 'token-B-80RAFT-20WETH'
+  | 'network-ethereum'
+  | 'network-arbitrum'
+  | 'network-optimism'
+  | 'network-polygon'
+  | 'network-base'
+  | 'network-zksync';
 export type LogoMap = { [k in string]: FC<LogoProps> };
 
 const DEFAULT_LogoS: LogoMap = {
@@ -100,6 +112,12 @@ const DEFAULT_LogoS: LogoMap = {
   'token-veRAFT': TokenVeRAFT,
   'token-B-80RAFT-20ETH': TokenB80RAFT20ETH,
   'token-B-80RAFT-20WETH': TokenB80RAFT20ETH,
+  'network-ethereum': NetworkEthereum,
+  'network-arbitrum': NetworkArbitrum,
+  'network-optimism': NetworkOptimism,
+  'network-polygon': NetworkPolygon,
+  'network-base': NetworkBase,
+  'network-zksync': NetworkZkSync,
 };
 
 export interface LogoGenericProps<T extends string> extends LogoProps {
