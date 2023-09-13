@@ -37,6 +37,8 @@ import NetworkOptimism from './NetworkOptimism';
 import NetworkPolygon from './NetworkPolygon';
 import NetworkBase from './NetworkBase';
 import NetworkZkSync from './NetworkZkSync';
+import TokenSwETH from './TokenSwETH';
+import TokenCbEth from './TokenCbEth';
 
 export type LogoType =
   | 'token-ETH'
@@ -69,6 +71,8 @@ export type LogoType =
   | 'token-rETH'
   | 'token-RAFT'
   | 'token-veRAFT'
+  | 'token-swETH'
+  | 'token-cbETH'
   | 'token-B-80RAFT-20ETH'
   | 'token-B-80RAFT-20WETH'
   | 'network-ethereum'
@@ -111,6 +115,8 @@ const DEFAULT_LogoS: LogoMap = {
   'token-rETH': TokenRETH,
   'token-RAFT': TokenRAFT,
   'token-veRAFT': TokenVeRAFT,
+  'token-swETH': TokenSwETH,
+  'token-cbETH': TokenCbEth,
   'token-B-80RAFT-20ETH': TokenB80RAFT20ETH,
   'token-B-80RAFT-20WETH': TokenB80RAFT20ETH,
   'network-ethereum': NetworkEthereum,
