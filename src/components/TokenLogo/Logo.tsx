@@ -92,6 +92,7 @@ const DEFAULT_LogoS: LogoMap = {
   'token-RARI': TokenRARI,
   'token-YFI': TokenYFI,
   'token-wBTC': TokenWBTC,
+  'token-WBTC': TokenWBTC,
   'token-wBTC-dark': TokenWBTCDark,
   'token-WETH': TokenWETH,
   'token-wFTM': TokenWFTM,
