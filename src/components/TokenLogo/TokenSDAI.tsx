@@ -21,8 +21,8 @@ const TokenDAI: FC<InnerLogoProps> = ({ size }) => (
     />
     <defs>
       <linearGradient id="paint0_linear_1196_16728" x1="12" y1="-3.4" x2="12" y2="26.52" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#75B93B" />
-        <stop offset="1" stop-color="#47A63E" />
+        <stop stopColor="#75B93B" />
+        <stop offset="1" stopColor="#47A63E" />
       </linearGradient>
     </defs>
   </svg>

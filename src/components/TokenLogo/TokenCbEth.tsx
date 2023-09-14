@@ -34,8 +34,8 @@ const TokenCbETH: FC<InnerLogoProps> = ({ size }) => (
       <path d="M10 12.661L14.2262 10.1388L10 8.17603V12.661Z" fill="#CCDCFF" />
       <path d="M10 13.4893L14.2262 11.0031L10 17V13.4893Z" fill="#6697FF" />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M10 1C5.02945 1 1 5.02945 1 10C1 14.9705 5.02945 19 10 19C14.9705 19 19 14.9705 19 10C19 5.02945 14.9705 1 10 1ZM0 10C0 4.47719 4.47719 0 10 0C15.5228 0 20 4.47719 20 10C20 15.5228 15.5228 20 10 20C4.47719 20 0 15.5228 0 10Z"
         fill="#0052FF"
       />
