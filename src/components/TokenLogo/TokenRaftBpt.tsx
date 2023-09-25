@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { InnerLogoProps } from './LogoProps';
 import withLogo from './withLogo';
 
-const TokenB80RAFT20ETH: FC<InnerLogoProps> = ({ size }) => (
+const TokenRaftBpt: FC<InnerLogoProps> = ({ size }) => (
   <svg
     className="common-ui__logo common-ui__logo-token-B-80RAFT-20ETH"
     width={size}
@@ -90,4 +90,4 @@ const TokenB80RAFT20ETH: FC<InnerLogoProps> = ({ size }) => (
   </svg>
 );
 
-export default withLogo(TokenB80RAFT20ETH);
+export default withLogo(TokenRaftBpt);

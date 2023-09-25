@@ -30,7 +30,7 @@ import TokenRETH from './TokenRETH';
 import TokenSDAI from './TokenSDAI';
 import TokenRAFT from './TokenRAFT';
 import TokenVeRAFT from './TokenVeRAFT';
-import TokenB80RAFT20ETH from './TokenB80RAFT20ETH';
+import TokenRaftBpt from './TokenRaftBpt';
 import NetworkEthereum from './NetworkEthereum';
 import NetworkArbitrum from './NetworkArbitrum';
 import NetworkOptimism from './NetworkOptimism';
@@ -73,8 +73,7 @@ export type LogoType =
   | 'token-veRAFT'
   | 'token-swETH'
   | 'token-cbETH'
-  | 'token-B-80RAFT-20ETH'
-  | 'token-B-80RAFT-20WETH'
+  | 'token-RAFT-BPT'
   | 'network-ethereum'
   | 'network-arbitrum'
   | 'network-optimism'
@@ -117,8 +116,7 @@ const DEFAULT_LogoS: LogoMap = {
   'token-veRAFT': TokenVeRAFT,
   'token-swETH': TokenSwETH,
   'token-cbETH': TokenCbEth,
-  'token-B-80RAFT-20ETH': TokenB80RAFT20ETH,
-  'token-B-80RAFT-20WETH': TokenB80RAFT20ETH,
+  'token-RAFT-BPT': TokenRaftBpt,
   'network-ethereum': NetworkEthereum,
   'network-arbitrum': NetworkArbitrum,
   'network-optimism': NetworkOptimism,
