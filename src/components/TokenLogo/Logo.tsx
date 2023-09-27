@@ -74,6 +74,7 @@ export type LogoType =
   | 'token-swETH'
   | 'token-cbETH'
   | 'token-RAFT-BPT'
+  | 'network-mainnet'
   | 'network-ethereum'
   | 'network-arbitrum'
   | 'network-optimism'
@@ -117,6 +118,7 @@ const DEFAULT_LogoS: LogoMap = {
   'token-swETH': TokenSwETH,
   'token-cbETH': TokenCbEth,
   'token-RAFT-BPT': TokenRaftBpt,
+  'network-mainnet': NetworkEthereum,
   'network-ethereum': NetworkEthereum,
   'network-arbitrum': NetworkArbitrum,
   'network-optimism': NetworkOptimism,
