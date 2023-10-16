@@ -39,6 +39,7 @@ import NetworkBase from './NetworkBase';
 import NetworkZkSync from './NetworkZkSync';
 import TokenSwETH from './TokenSwETH';
 import TokenCbEth from './TokenCbEth';
+import TokenRR from './TokenRR';
 
 export type LogoType =
   | 'token-ETH'
@@ -48,6 +49,7 @@ export type LogoType =
   | 'token-DAI'
   | 'token-sDAI'
   | 'token-R'
+  | 'token-RR'
   | 'token-FTM'
   | 'token-MIM'
   | 'token-RARI'
@@ -91,6 +93,7 @@ const DEFAULT_LogoS: LogoMap = {
   'token-DAI': TokenDAI,
   'token-sDAI': TokenSDAI,
   'token-R': TokenR,
+  'token-RR': TokenRR,
   'token-FTM': TokenFTM,
   'token-MIM': TokenMIM,
   'token-RARI': TokenRARI,
