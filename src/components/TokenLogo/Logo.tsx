@@ -85,7 +85,7 @@ export type LogoType =
   | 'network-zksync';
 export type LogoMap = { [k in string]: FC<LogoProps> };
 
-const DEFAULT_LogoS: LogoMap = {
+export const DEFAULT_LOGO_MAP: LogoMap = {
   'token-ETH': TokenETH,
   'token-ETH-light': TokenETHLight,
   'token-USDC': TokenUSDC,
@@ -132,13 +132,13 @@ const DEFAULT_LogoS: LogoMap = {
 
 export interface LogoGenericProps<T extends string> extends LogoProps {
   type: T;
-  LogoMap?: LogoMap;
+  logoMap?: LogoMap;
 }
 
 const TokenLogo = <T extends string = LogoType>(props: LogoGenericProps<T>) => {
-  const { type, LogoMap = DEFAULT_LogoS, ...LogoProps } = props;
+  const { type, logoMap = DEFAULT_LOGO_MAP, ...LogoProps } = props;
 
-  const LogoComponent = LogoMap[type];
+  const LogoComponent = logoMap[type];
 
   if (!LogoComponent) {
     return null;

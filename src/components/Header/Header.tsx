@@ -1,4 +1,4 @@
-import { FC, Fragment, memo, ReactNode, useCallback, useEffect, useRef, useState } from 'react';
+import { FC, Fragment, memo, ReactNode, useCallback, useEffect, useRef } from 'react';
 import Link from '../Link';
 import MenuButton from './MenuButton';
 

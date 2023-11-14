@@ -1,48 +1,59 @@
-import { FC, forwardRef, memo, HTMLProps, useMemo, PropsWithChildren } from 'react';
+import { FC, forwardRef, memo, HTMLProps, useMemo, PropsWithChildren, cloneElement, ReactElement } from 'react';
 
 import './Link.scss';
 
-export interface LinkProps {
-  className?: string;
-  title?: string;
-  href?: string;
-  disabled?: boolean;
-  onClick?: () => void;
+export interface LinkProps extends HTMLProps<HTMLAnchorElement> {
+  internalLink?: ReactElement;
 }
 
-const Link = forwardRef<HTMLAnchorElement, PropsWithChildren<LinkProps>>((props, ref) => {
-  const { children, className = '', disabled, title, href = '', onClick } = props;
+const Link = forwardRef<HTMLAnchorElement, LinkProps>((props, ref) => {
+  const {
+    children,
+    className = '',
+    disabled,
+    title = '',
+    href = '',
+    target = '_blank',
+    download,
+    internalLink,
+    onClick,
+  } = props;
 
   const isExternal = useMemo(() => href.includes('://'), [href]);
 
+  if (isExternal) {
+    return (
+      <a
+        ref={ref}
+        rel="external noreferrer nofollow"
+        target={target}
+        className={`common-ui__link ${className} ${disabled ? 'disabled' : ''}`}
+        title={title}
+        href={disabled ? '' : href}
+        download={download}
+        onClick={onClick}
+      >
+        {children}
+      </a>
+    );
+  }
+
+  if (internalLink) {
+    const { internalLink: l, ...remainProps } = props;
+    return cloneElement(internalLink, { ...remainProps, ref });
+  }
+
   return (
-    <>
-      {isExternal && (
-        <a
-          ref={ref}
-          rel="external noreferrer nofollow"
-          target="_blank"
-          className={`common-ui__link ${className} ${disabled ? 'disabled' : ''}`}
-          title={title}
-          href={href}
-          onClick={onClick}
-        >
-          {children}
-        </a>
-      )}
-      {!isExternal && (
-        // eslint-disable-next-line jsx-a11y/anchor-is-valid
-        <a
-          ref={ref}
-          className={`common-ui__link ${className} `}
-          title={title}
-          href={disabled ? '#' : href}
-          onClick={onClick}
-        >
-          {children}
-        </a>
-      )}
-    </>
+    <a
+      ref={ref}
+      className={`common-ui__link ${className} `}
+      title={title}
+      href={disabled ? '#' : href}
+      download={download}
+      onClick={onClick}
+    >
+      {children}
+    </a>
   );
 });
 

@@ -82,6 +82,7 @@ export interface TypographyBaseProps<V extends string, C extends string, W exten
   weight?: W;
   type?: T;
   className?: string;
+  title?: string;
 }
 
 export interface TypographyProps<V extends string, C extends string, W extends string, T extends string>
@@ -111,6 +112,7 @@ const Typography = <
     type,
     children,
     className,
+    title,
     variantMap = DEFAULT_VARIANTS,
     colorMap = DEFAULT_COLORS,
     weightMap = DEFAULT_WEIGHTS,
@@ -128,6 +130,7 @@ const Typography = <
   return (
     <div
       className={className}
+      title={title}
       style={{
         ...fontVariant,
         color: fontColor,
