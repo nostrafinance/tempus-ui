@@ -40,6 +40,7 @@ import NetworkZkSync from './NetworkZkSync';
 import TokenSwETH from './TokenSwETH';
 import TokenCbEth from './TokenCbEth';
 import TokenRR from './TokenRR';
+import TokenLORDS from './TokenLORDS';
 
 export type LogoType =
   | 'token-ETH'
@@ -76,6 +77,7 @@ export type LogoType =
   | 'token-swETH'
   | 'token-cbETH'
   | 'token-RAFT-BPT'
+  | 'token-LORDS'
   | 'network-mainnet'
   | 'network-ethereum'
   | 'network-arbitrum'
@@ -121,6 +123,7 @@ export const DEFAULT_LOGO_MAP: LogoMap = {
   'token-swETH': TokenSwETH,
   'token-cbETH': TokenCbEth,
   'token-RAFT-BPT': TokenRaftBpt,
+  'token-LORDS': TokenLORDS,
   'network-mainnet': NetworkEthereum,
   'network-ethereum': NetworkEthereum,
   'network-arbitrum': NetworkArbitrum,
