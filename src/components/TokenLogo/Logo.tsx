@@ -41,6 +41,7 @@ import TokenSwETH from './TokenSwETH';
 import TokenCbEth from './TokenCbEth';
 import TokenRR from './TokenRR';
 import TokenLORDS from './TokenLORDS';
+import TokenSTRK from './TokenSTRK';
 
 export type LogoType =
   | 'token-ETH'
@@ -78,6 +79,7 @@ export type LogoType =
   | 'token-cbETH'
   | 'token-RAFT-BPT'
   | 'token-LORDS'
+  | 'token-STRK'
   | 'network-mainnet'
   | 'network-ethereum'
   | 'network-arbitrum'
@@ -124,6 +126,7 @@ export const DEFAULT_LOGO_MAP: LogoMap = {
   'token-cbETH': TokenCbEth,
   'token-RAFT-BPT': TokenRaftBpt,
   'token-LORDS': TokenLORDS,
+  'token-STRK': TokenSTRK,
   'network-mainnet': NetworkEthereum,
   'network-ethereum': NetworkEthereum,
   'network-arbitrum': NetworkArbitrum,
