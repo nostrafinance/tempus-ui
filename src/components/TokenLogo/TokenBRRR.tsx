@@ -13,11 +13,11 @@ const TokenBRRR: FC<InnerLogoProps> = ({ size }) => (
     xmlnsXlink="http://www.w3.org/1999/xlink"
   >
     <g clip-path="url(#clip0_1880_3915)">
-      <rect x="-1" y="-1" width="34" height="34" fill="url(#pattern0)" />
+      <rect x="-1" y="-1" width="34" height="34" fill="url(#patternBRRR)" />
     </g>
     <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#13CE6B" />
     <defs>
-      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <pattern id="patternBRRR" patternContentUnits="objectBoundingBox" width="1" height="1">
         <use xlinkHref="#image0_1880_3915" transform="matrix(0.00149165 0 0 0.00154321 -0.0966587 -0.117284)" />
       </pattern>
       <clipPath id="clip0_1880_3915">
