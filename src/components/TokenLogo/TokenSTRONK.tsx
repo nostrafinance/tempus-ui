@@ -12,7 +12,7 @@ const TokenSTRONK: FC<InnerLogoProps> = ({ size }) => (
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
   >
-    <g clip-path="url(#clip0_1881_3936)">
+    <g clipPath="url(#clip0_1881_3936)">
       <rect width="32" height="32" rx="16" fill="#D6D6ED" />
       <rect width="32" height="32" fill="url(#pattern0)" />
     </g>
