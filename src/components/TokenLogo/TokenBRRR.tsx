@@ -12,7 +12,7 @@ const TokenBRRR: FC<InnerLogoProps> = ({ size }) => (
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
   >
-    <g clip-path="url(#clip0_1880_3915)">
+    <g clipPath="url(#clip0_1880_3915)">
       <rect x="-1" y="-1" width="34" height="34" fill="url(#patternBRRR)" />
     </g>
     <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#13CE6B" />

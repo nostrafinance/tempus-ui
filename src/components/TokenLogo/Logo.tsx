@@ -45,6 +45,7 @@ import TokenSTRK from './TokenSTRK';
 import TokenBRRR from './TokenBRRR';
 import TokenSTRONK from './TokenSTRONK';
 import TokenTONY from './TokenTONY';
+import TokenAKU from './TokenAKU';
 
 export type LogoType =
   | 'token-ETH'
@@ -86,6 +87,7 @@ export type LogoType =
   | 'token-BRRR'
   | 'token-STRONK'
   | 'token-TONY'
+  | 'token-AKU'
   | 'network-mainnet'
   | 'network-ethereum'
   | 'network-arbitrum'
@@ -136,6 +138,7 @@ export const DEFAULT_LOGO_MAP: LogoMap = {
   'token-BRRR': TokenBRRR,
   'token-STRONK': TokenSTRONK,
   'token-TONY': TokenTONY,
+  'token-AKU': TokenAKU,
   'network-mainnet': NetworkEthereum,
   'network-ethereum': NetworkEthereum,
   'network-arbitrum': NetworkArbitrum,
