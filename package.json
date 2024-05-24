@@ -59,14 +59,14 @@
     "@types/jsonp": "^0.2.1",
     "@types/node": "18.11.9",
     "@types/react": "^17.0.0",
-    "node-sass": "^7.0.3",
+    "node-sass": "^9.0.0",
     "postcss": "^8.4.21",
     "react": "^17.0.0",
     "rollup": "^3.11.0",
     "rollup-plugin-dts": "^5.1.1",
     "rollup-plugin-replace": "^2.2.0",
     "rollup-plugin-sass": "^1.12.19",
-    "sass": "^1.59.3",
+    "sass": "^1.77.2",
     "tslib": "^2.5.0"
   },
   "files": [

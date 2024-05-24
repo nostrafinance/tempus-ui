@@ -16,6 +16,7 @@ const ButtonWrapper = forwardRef<HTMLButtonElement, ButtonWrapperProps>((props, 
       data-selected={selected}
       data-disabled={disabled}
       type="button"
+      disabled={disabled}
     >
       {children}
     </button>
