@@ -95,6 +95,7 @@ export type LogoType =
   | 'token-nstSTRK'
   | 'token-UNO'
   | 'token-PAL'
+  | 'token-NSTR'
   | 'network-mainnet'
   | 'network-ethereum'
   | 'network-arbitrum'
