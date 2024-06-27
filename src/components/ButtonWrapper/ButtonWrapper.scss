@@ -11,4 +11,8 @@
   &:disabled {
     cursor: default;
   }
+
+  &[data-full-width='true'] {
+    width: 100%;
+  }
 }

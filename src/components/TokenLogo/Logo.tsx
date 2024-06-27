@@ -96,6 +96,7 @@ export type LogoType =
   | 'token-UNO'
   | 'token-PAL'
   | 'token-NSTR'
+  | 'token-DAIv0'
   | 'network-mainnet'
   | 'network-ethereum'
   | 'network-arbitrum'
@@ -151,6 +152,7 @@ export const DEFAULT_LOGO_MAP: LogoMap = {
   'token-UNO': TokenUNO,
   'token-PAL': TokenPAL,
   'token-NSTR': TokenNSTR,
+  'token-DAIv0': TokenDAI,
   'network-mainnet': NetworkEthereum,
   'network-ethereum': NetworkEthereum,
   'network-arbitrum': NetworkArbitrum,
