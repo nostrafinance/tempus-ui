@@ -50,6 +50,7 @@ import TokenNstSTRK from './TokenNstSTRK';
 import TokenUNO from './TokenUNO';
 import TokenPAL from './TokenPAL';
 import TokenNSTR from './TokenNSTR';
+import TokenLINK from './TokenLINK';
 
 export type LogoType =
   | 'token-ETH'
@@ -97,6 +98,7 @@ export type LogoType =
   | 'token-PAL'
   | 'token-NSTR'
   | 'token-DAIv0'
+  | 'token-LINK'
   | 'network-mainnet'
   | 'network-ethereum'
   | 'network-arbitrum'
@@ -153,6 +155,7 @@ export const DEFAULT_LOGO_MAP: LogoMap = {
   'token-PAL': TokenPAL,
   'token-NSTR': TokenNSTR,
   'token-DAIv0': TokenDAI,
+  'token-LINK': TokenLINK,
   'network-mainnet': NetworkEthereum,
   'network-ethereum': NetworkEthereum,
   'network-arbitrum': NetworkArbitrum,
