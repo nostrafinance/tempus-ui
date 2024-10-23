@@ -50,6 +50,7 @@ import TokenNstSTRK from './TokenNstSTRK';
 import TokenUNO from './TokenUNO';
 import TokenPAL from './TokenPAL';
 import TokenNSTR from './TokenNSTR';
+import TokenEKUBO from './TokenEKUBO';
 import TokenLINK from './TokenLINK';
 import TokenWBTCETH from './TokenWBTCETH';
 import TokenSTRKETH from './TokenSTRKETH';
@@ -101,6 +102,7 @@ export type LogoType =
   | 'token-UNO'
   | 'token-PAL'
   | 'token-NSTR'
+  | 'token-EKUBO'
   | 'token-DAIv0'
   | 'token-LINK'
   | 'token-WBTC-ETH'
@@ -162,6 +164,7 @@ export const DEFAULT_LOGO_MAP: LogoMap = {
   'token-UNO': TokenUNO,
   'token-PAL': TokenPAL,
   'token-NSTR': TokenNSTR,
+  'token-EKUBO': TokenEKUBO,
   'token-DAIv0': TokenDAI,
   'token-LINK': TokenLINK,
   'token-WBTC-ETH': TokenWBTCETH,
