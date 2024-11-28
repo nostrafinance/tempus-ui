@@ -8,7 +8,7 @@ const TokenNstSTRK: FC<InnerLogoProps> = ({ size }) => (
     className="common-ui__logo common-ui__logo-token-sSTRK"
     width={size}
     height={size}
-    viewBox="0 0 24 25"
+    viewBox="0 0 204 210"
     fill="none"
   >
     <path
