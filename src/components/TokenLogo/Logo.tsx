@@ -57,6 +57,7 @@ import TokenSTRKETH from './TokenSTRKETH';
 import TokenETHUSDC from './TokenETHUSDC';
 import TokenSTRKUSDC from './TokenSTRKUSDC';
 import TokenSSTRK from './TokenSSTRK';
+import TokenXSTRK from './TokenXSTRK';
 
 export type LogoType =
   | 'token-ETH'
@@ -107,6 +108,7 @@ export type LogoType =
   | 'token-DAIv0'
   | 'token-LINK'
   | 'token-sSTRK'
+  | 'token-xSTRK'
   | 'token-WBTC-ETH'
   | 'token-STRK-ETH'
   | 'token-ETH-USDC'
@@ -170,6 +172,7 @@ export const DEFAULT_LOGO_MAP: LogoMap = {
   'token-DAIv0': TokenDAI,
   'token-LINK': TokenLINK,
   'token-sSTRK': TokenSSTRK,
+  'token-xSTRK': TokenXSTRK,
   'token-WBTC-ETH': TokenWBTCETH,
   'token-STRK-ETH': TokenSTRKETH,
   'token-ETH-USDC': TokenETHUSDC,
