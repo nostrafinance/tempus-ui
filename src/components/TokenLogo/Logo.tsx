@@ -58,6 +58,7 @@ import TokenETHUSDC from './TokenETHUSDC';
 import TokenSTRKUSDC from './TokenSTRKUSDC';
 import TokenSSTRK from './TokenSSTRK';
 import TokenXSTRK from './TokenXSTRK';
+import TokenBROTHER from './TokenBROTHER';
 
 export type LogoType =
   | 'token-ETH'
@@ -105,6 +106,7 @@ export type LogoType =
   | 'token-PAL'
   | 'token-NSTR'
   | 'token-EKUBO'
+  | 'token-BROTHER'
   | 'token-DAIv0'
   | 'token-LINK'
   | 'token-sSTRK'
@@ -169,6 +171,7 @@ export const DEFAULT_LOGO_MAP: LogoMap = {
   'token-PAL': TokenPAL,
   'token-NSTR': TokenNSTR,
   'token-EKUBO': TokenEKUBO,
+  'token-BROTHER': TokenBROTHER,
   'token-DAIv0': TokenDAI,
   'token-LINK': TokenLINK,
   'token-sSTRK': TokenSSTRK,
